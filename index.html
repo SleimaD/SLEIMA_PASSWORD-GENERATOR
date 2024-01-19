@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body> 
+
+
+      <!-- Main container for the password generator -->
+     <div>
+        <div class="container">
+
+            <h2>Password Generator</h2>   <!-- Title of the password generator -->
+    
+            <div class="innerContainer">     <!-- Inner container for displaying the generated password -->
+    
+                <p id="result"></p>      <!-- Paragraph where the generated password will be displayed -->
+                
+                <button class="btnclip" id="clipboard">
+                    <div class="divboard"><img src="./public/src/clipboard.png" alt="clipboard"></div>
+                </button>    <!-- Button for copying the generated password to the clipboard -->
+    
+            </div>  
+    
+    
+            <div class="choices">   <!-- Container for the choices that determine the generated password -->
+    
+                <div class="choix">  <!-- Checkboxes for selecting the character types included in the password -->
+    
+                    <label>Password length</label>
+                    <input type="number" id="length" min='4' max='20' value='20'>    <!-- Input field for setting the password length -->
+                
+                </div>
+    
+                <div class="choix">
+    
+                    <label>Include uppercase letters</label> 
+                    <input type="checkbox" id="maj" checked >
+    
+                </div>
+                <div class="choix">
+    
+                    <label>Include lowercase letters</label> 
+                    <input type="checkbox" id="min" checked >
+                
+                </div>
+                <div class="choix">
+    
+                    <label>Include numbers</label> 
+                    <input type="checkbox" id="numbers" checked >
+    
+                </div>
+                <div class="choix">
+    
+                    <label>Include symbols</label> 
+                    <input type="checkbox" id="symbols" checked >
+    
+                </div>
+            </div>
+    
+    
+            <button class="btn-large" id="generate">   <!-- Button for generating the password -->
+                Generate password
+            </button>
+    
+        </div> 
+    
+     </div>
+
+
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
